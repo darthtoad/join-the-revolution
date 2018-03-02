@@ -1,0 +1,22 @@
+<h1>Welcome!</h1>
+<div class="container">
+  <h2>Login</h2>
+  <label>Email address</label>
+  <input #email type="email">
+  <label>Password</label>
+  <input #password type="password">
+  <button (click)="login()" class="btn btn-primary">Login</button>
+
+  <h3>Create New Account</h3>
+  <label>Email address</label>
+  <input #newEmail type="email">
+  <label>Password</label>
+  <input #newPassword type="password">
+  <label>Your name</label>
+  <input #name type="text" >
+  <label>Favorite color</label>
+  <input #favoriteColor>
+  <label>Your political statement</label>
+  <textarea #politicalStatement>
+  <button (click)="submitForm(newEmail.value, newPassword.value, name.value, favoriteColor.value, politicalStatement.value)" class="btn btn-primary">Create New Account</button>
+</div>
